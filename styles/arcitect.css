@@ -1,8 +1,14 @@
 /* font famaly work sence  */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared style  */
 * {
     font-family: 'Work Sans', sans-serif;
+}
+
+.text-colour-gray {
+    color: #727272;
+    font-weight: 400;
 }
 
 /* header styles  */
@@ -55,12 +61,6 @@ nav a {
 
 }
 
-.banner-diecription {
-    text-align: center;
-    color: #727272;
-    font-weight: 400;
-
-}
 
 .btn-primary {
     border-radius: 8px;
@@ -78,7 +78,7 @@ nav a {
 /* main section styles */
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 /* teams section styles  */
@@ -104,7 +104,7 @@ main {
     font-weight: 500;
 }
 
-.of-out {
+.of-our {
     color: #131313;
     font-size: calc(45rem / 16);
     font-weight: 700;
@@ -124,8 +124,18 @@ main {
         padding: 5px 20px;
     }
 
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
+    }
+
+    .teams-image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -135,7 +145,8 @@ main {
         padding: 5px 50px;
     }
 
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 }
