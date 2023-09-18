@@ -4,3 +4,97 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
+
+/* header styles  */
+header {
+    padding: 50px 240px;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: var(--Dark-01, #131313);
+
+    font-size: calc(45rem / 16);
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+    font-size: calc(18rem / 16);
+}
+
+/* banner styles  */
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    color: #131313;
+    text-align: center;
+    font-size: calc(64rem / 16);
+    font-weight: 700;
+
+}
+
+.banner-diecription {
+    text-align: center;
+    color: #727272;
+    font-weight: 400;
+
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    color: #FFF;
+    padding: 20px 25px;
+    font-size: calc(20rem / 16);
+}
+
+.banner-image {
+    width: 100%;
+}
+
+
+/* Responsive media quaris  */
+/* mobile devise  */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 5px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* tablate devises  */
+@media screen and (min-width: 570px) and (max-width:960px) {
+    header {
+        padding: 5px 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
