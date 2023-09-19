@@ -144,6 +144,21 @@ main {
     margin-top: 5px;
 }
 
+.sponser {
+    text-align: center;
+}
+
+.sponser-image-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.sponser-image-container img {
+    width: 165px;
+}
 
 /* Responsive media quaris  */
 /* mobile devise  */
@@ -154,7 +169,8 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponser-image-container {
         flex-direction: column;
     }
 
@@ -180,7 +196,8 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,
+    .sponser-image-container {
         flex-direction: column;
     }
 }
